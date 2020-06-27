@@ -291,7 +291,7 @@ function addArtist(arrayAdding, id, name, years, genre, nationality, bio) {
   console.log(arrayAdding);
 }
 
-addArtist(artists, 20, "Cassidy Spalding", "1996-2020", "Web Dev", "American", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum erat ac mauris convallis vestibulum. Integer odio arcu, imperdiet vel erat eget, sodales semper turpis.");
+/*addArtist(artists, 20, "Cassidy Spalding", "1996-2020", "Web Dev", "American", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum erat ac mauris convallis vestibulum. Integer odio arcu, imperdiet vel erat eget, sodales semper turpis.");*/
 
 /* Task 7: Create a function called lotsOfArt() that takes one argument: 
 
@@ -301,13 +301,18 @@ and returns an array with names of artists who painted more than 100 paintings.
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
 
-function lotsOfArt(/* Code here */) {
+function lotsOfArt(array) {
+  const newArray = []
+  for(i=0; i<array.length; i++){
+    if(array[i].paintings > 100){
+      newArray.push(array[i].name)
+    }
 
-  /* Code here */
+  }console.log(newArray)
 
 }
 
-
+lotsOfArt(artists)
 
 // 🎨🎨 STRETCH 🎨🎨//
 
